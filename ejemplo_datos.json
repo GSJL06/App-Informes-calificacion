@@ -1,0 +1,18 @@
+{
+  "nombre_establecimiento": "Clínica San Rafael",
+  "direccion": "Avenida Principal 456, Bogotá",
+  "titulo": "Sistema de monitoreo cardíaco",
+  "fecha_calificacion": "15/12/2024",
+  "fecha_firma": "20/12/2024",
+  "numero_informe": "N° 125",
+  "nombre_realizo": "Juan Carlos Pérez García",
+  "nombre_verifico": "Ana María López Rodríguez",
+  "email_contacto_1": "contacto@clinicasanrafael.com",
+  "email_contacto_2": "ingenieria@clinicasanrafael.com",
+  "email_contacto_3": "calidad@clinicasanrafael.com",
+  "email_contacto_4": "direccion@clinicasanrafael.com",
+  "email_contacto_5": "gerencia@clinicasanrafael.com",
+  "telefono_monitoreo": "6012345678",
+  "telefono_servicio_tecnico": "3001234567",
+  "email_sistema": "soporte@sistemasmedicos.com"
+}

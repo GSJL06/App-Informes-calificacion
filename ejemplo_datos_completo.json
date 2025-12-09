@@ -1,0 +1,89 @@
+{
+  "nombre_establecimiento": "Clínica San Rafael",
+  "direccion": "Avenida Principal 456, Bogotá",
+  "titulo": "Sistema de monitoreo cardíaco",
+  "fecha_calificacion": "15/12/2024",
+  "fecha_firma": "20/12/2024",
+  "numero_informe": "N° 125",
+  "nombre_realizo": "Juan Carlos Pérez García",
+  "nombre_verifico": "Ana María López Rodríguez",
+  "email_contacto_1": "contacto@clinicasanrafael.com",
+  "email_contacto_2": "ingenieria@clinicasanrafael.com",
+  "email_contacto_3": "calidad@clinicasanrafael.com",
+  "email_contacto_4": "direccion@clinicasanrafael.com",
+  "email_contacto_5": "gerencia@clinicasanrafael.com",
+  "telefono_monitoreo": "6012345678",
+  "telefono_servicio_tecnico": "3001234567",
+  "email_sistema": "soporte@sistemasmedicos.com",
+
+  "dispositivos": [
+    "PRF196 NEVERA MED. FAST TRACK-P2-TA",
+    "PRF250 NEVERA MED. BODEGA FARM. E8-PB1-TB",
+    "PRF251 NEVERA MED. BODEGA FARM. E8-PB1-TC",
+    "PRF252 NEVERA MED. CENTRAL MEZCLAS-P2-TD",
+    "PRF253 NEVERA MED. URGENCIAS-P1-TE",
+    "PRF254 NEVERA MED. UCI-P3-TF",
+    "PRF255 NEVERA MED. LABORATORIO-P2-TG",
+    "PRF256 NEVERA MED. FARMACIA-P1-TH",
+    "PRF257 NEVERA MED. VACUNAS-P2-TI",
+    "PRF258 NEVERA MED. BANCO SANGRE-P1-TJ"
+  ],
+
+  "responsables": [
+    {
+      "nombre": "Centro de monitoreo",
+      "telefono": "6012345678",
+      "correo": "monitoreo@clinicasanrafael.com"
+    },
+    {
+      "nombre": "Yesid Hoyos",
+      "telefono": "3101234567",
+      "correo": "yhoyos@clinicasanrafael.com"
+    },
+    {
+      "nombre": "Darío Rojas",
+      "telefono": "3164433168",
+      "correo": "drojas@clinicasanrafael.com"
+    },
+    {
+      "nombre": "María González",
+      "telefono": "3209876543",
+      "correo": "mgonzalez@clinicasanrafael.com"
+    }
+  ],
+
+  "equipos_calibrados": [
+    {
+      "codigo": "EQ-001",
+      "descripcion": "Termómetro digital",
+      "fecha_calibracion": "01/11/2024",
+      "proxima_calibracion": "01/11/2025"
+    },
+    {
+      "codigo": "EQ-002",
+      "descripcion": "Higrómetro",
+      "fecha_calibracion": "15/10/2024",
+      "proxima_calibracion": "15/10/2025"
+    },
+    {
+      "codigo": "EQ-003",
+      "descripcion": "Datalogger temperatura",
+      "fecha_calibracion": "20/09/2024",
+      "proxima_calibracion": "20/09/2025"
+    }
+  ],
+
+  "pruebas_realizadas": [
+    "Verificación de rangos de temperatura",
+    "Prueba de uniformidad térmica",
+    "Verificación de alarmas",
+    "Prueba de recuperación tras apertura de puerta",
+    "Verificación de registro de datos"
+  ],
+
+  "observaciones": [
+    "Todos los equipos cumplen con las especificaciones",
+    "Se recomienda mantenimiento preventivo trimestral",
+    "Calibración de sensores dentro de tolerancia"
+  ]
+}

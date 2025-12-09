@@ -1,0 +1,18 @@
+{
+  "fecha": "5 de Diciembre de 2024",
+  "numero_contrato": "CONT-2024-001",
+  "nombre_cliente": "María García López",
+  "empresa_cliente": "Innovaciones Tech S.A.",
+  "direccion_cliente": "Calle Principal 123, Ciudad",
+  "email_cliente": "maria.garcia@innovatech.com",
+  "nombre_proveedor": "Carlos Rodríguez",
+  "empresa_proveedor": "Soluciones Digitales S.L.",
+  "direccion_proveedor": "Avenida Central 456, Ciudad",
+  "servicio_1": "Desarrollo de aplicación web",
+  "servicio_2": "Mantenimiento mensual",
+  "servicio_3": "Soporte técnico 24/7",
+  "monto_total": "15,000.00",
+  "fecha_inicio": "1 de Enero de 2025",
+  "fecha_fin": "31 de Diciembre de 2025",
+  "forma_pago": "Transferencia bancaria mensual"
+}

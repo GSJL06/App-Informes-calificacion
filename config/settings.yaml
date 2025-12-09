@@ -1,0 +1,163 @@
+# DOCX Editor Configuration
+# Configuración principal del sistema
+
+# General Settings
+app:
+  name: "DOCX Editor"
+  version: "1.0.0"
+  environment: "production" # development, staging, production
+
+# File Processing
+processing:
+  max_file_size_mb: 20
+  max_file_size_bytes: 20971520 # 20MB
+  supported_extensions:
+    - ".docx"
+  temp_dir: "./temp"
+  backup_dir: "./backups"
+
+  # Performance
+  chunk_size: 8192 # Para lectura de archivos
+  memory_limit_mb: 512
+
+  # Backup
+  backup:
+    enabled: true
+    auto_create: true
+    retention_days: 30
+    timestamp_format: "%Y%m%d_%H%M%S"
+
+# Concurrency
+concurrency:
+  worker_pool_size: 4
+  max_batch_size: 10
+  timeout_seconds: 300
+
+# Placeholder Engine
+placeholders:
+  pattern: '\{\{([a-zA-Z0-9_]+)\}\}'
+  case_sensitive: true
+  strict_mode_default: false
+  preserve_format_default: true
+
+# Footer Editor
+footer:
+  preserve_format_default: true
+  clear_existing_default: true
+  default_font: "Arial"
+  default_font_size: 10
+
+# Validation
+validation:
+  check_xml_well_formed: true
+  check_zip_integrity: true
+  check_required_files: true
+  max_validation_time_seconds: 10
+
+# Logging
+logging:
+  level: "INFO" # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_enabled: true
+  log_dir: "./logs"
+  max_file_size_mb: 10
+  backup_count: 5
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  reload: false # Solo true en development
+
+  # CORS
+  cors:
+    enabled: true
+    allow_origins:
+      - "http://localhost:3000"
+      - "http://localhost:8080"
+    allow_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+    allow_headers:
+      - "*"
+
+  # Rate Limiting
+  rate_limit:
+    enabled: true
+    requests_per_minute: 60
+    burst: 10
+
+  # Upload
+  upload:
+    max_file_size_mb: 20
+    allowed_extensions:
+      - ".docx"
+    temp_cleanup_minutes: 60
+
+# CLI Configuration
+cli:
+  default_output_format: "text" # text, json
+  progress_bar_enabled: true
+  color_output: true
+  verbose_default: false
+
+# Docker Configuration
+docker:
+  image_name: "docx-editor"
+  container_name: "docx-editor-api"
+  restart_policy: "unless-stopped"
+
+  # Resources
+  resources:
+    cpu_limit: 2
+    memory_limit: "1g"
+    cpu_reservation: 0.5
+    memory_reservation: "512m"
+
+# Monitoring
+monitoring:
+  enabled: true
+  metrics_enabled: true
+  performance_tracking: true
+
+# Security
+security:
+  max_filename_length: 255
+  sanitize_filenames: true
+  allowed_mime_types:
+    - "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+# Development Settings (solo en environment: development)
+development:
+  debug: true
+  reload: true
+  profiling_enabled: true
+  mock_processing: false
+
+# Production Settings
+production:
+  debug: false
+  reload: false
+  profiling_enabled: false
+  enable_ssl: true
+
+# Feature Flags
+features:
+  advanced_formatting: true
+  batch_processing: true
+  api_enabled: true
+  cli_enabled: true
+  web_ui_enabled: false # Para futuro desarrollo
+
+# Paths (relativas al directorio raíz)
+paths:
+  src: "./src"
+  tests: "./tests"
+  config: "./config"
+  temp: "./temp"
+  backups: "./backups"
+  logs: "./logs"
+  fixtures: "./tests/fixtures"
